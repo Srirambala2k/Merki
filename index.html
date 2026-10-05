@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>The Merki — Building brands people can’t ignore</title>
+  <meta name="description" content="Creative strategy, content and digital experiences designed to make brands impossible to scroll past." />
+  <meta name="theme-color" content="#0a0a0b" />
+  <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@1,8..60,400;1,8..60,500&display=swap" rel="stylesheet" />
+  <script>document.documentElement.className = 'js';</script>
+</head>
+<body data-theme="dark">
+
+  <!-- Each scene = background plate + separate cut-out subjects (injected by main.js) -->
+  <div id="veil" aria-hidden="true"></div>
+  <canvas id="dust" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#" data-goto="0" aria-label="The Merki — home">
+      <svg class="mark" viewBox="-1 -1 46 38" aria-hidden="true">
+        <path pathLength="1" d="M0 36V0h8l12 14L32 0h8v28h-8V12L20 26 8 12v24z" />
+        <rect pathLength="1" x="35" y="30" width="6" height="6" />
+      </svg>
+      <span class="wordmark" aria-hidden="true">THE MERKI</span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="#" data-goto="3" data-cursor="View">Work</a>
+      <a href="#" data-goto="2" data-cursor="View">Services</a>
+      <a href="#" data-goto="5" data-cursor="View">Process</a>
+      <a class="ig" href="https://www.instagram.com/the_merki?stkn=MXA1aXlpZXptdmpyZw%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="The Merki on Instagram" data-cursor="Follow">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></svg>
+      </a>
+      <button type="button" class="pill" data-open-contact data-cursor="Talk">Start a project</button>
+    </nav>
+  </header>
+
+  <aside class="hud" aria-hidden="true">
+    <div class="count"><span id="hud-i">01</span><i></i><span>08</span></div>
+    <div class="hud-name" id="hud-name">Intro</div>
+    <div class="rail"><b id="rail-fill"></b></div>
+  </aside>
+
+  <main id="stage">
+
+    <!-- 01 HERO -->
+    <section class="scene" data-name="Intro" aria-label="Intro">
+      <div class="row" style="--top:36%;--gap:19vw">
+        <h1 class="h1 col-l split" data-x="-1">Building brands</h1>
+        <h1 class="h1 col-r split" data-x="1"><em>people can’t ignore</em></h1>
+      </div>
+      <div class="foot-center hero-foot" data-depth="0.5">
+        <p class="lead" data-fade>Creative strategy, content and digital experiences <br />designed to make brands impossible to scroll past.</p>
+        <a class="btn" href="#" data-goto="3" data-fade data-cursor="View">View projects</a>
+      </div>
+      <div class="scroll-hint" data-fade><span>Scroll</span><i></i></div>
+    </section>
+
+    <!-- 02 ABOUT -->
+    <section class="scene" data-name="About" aria-label="About">
+      <div class="row edge" style="--top:38%;--gap:14vw">
+        <h2 class="h2 col-l split" data-x="-1">Built for brands that <em>refuse to blend in.</em></h2>
+        <div class="col-r" data-depth="0.8"><p class="body" data-fade>The Merki is a young creative agency building brands that feel fresh, thoughtful, and remembered.</p></div>
+      </div>
+    </section>
+
+    <!-- 03 SERVICES -->
+    <section class="scene" data-name="Services" aria-label="Services">
+      <h2 class="h2 corner-title split" data-x="-1">How we <em>work</em></h2>
+      <div class="svc svc-a" data-depth="0.4" data-svc="0.2"><h3 data-fade>Brand Identity</h3><p data-fade>Brand strategy, visual identity and positioning systems designed to build recognisable brands</p></div>
+      <div class="svc svc-b" data-depth="0.9" data-svc="0.5"><h3 data-fade>Social Media</h3><p data-fade>Creative direction and platform strategies focused on consistency, engagement and brand growth.</p></div>
+      <div class="svc svc-c" data-depth="0.7" data-svc="0.35"><h3 data-fade>Content Production</h3><p data-fade>High quality visuals, campaigns and short-form content created for modern attention spans.</p></div>
+      <div class="svc svc-d" data-depth="1.1" data-svc="0.65"><h3 data-fade>Website Experiences</h3><p data-fade>Modern websites designed to feel premium, interactive and conversion focused.</p></div>
+      <div class="foot-center"><a class="btn" href="#" data-goto="5" data-fade data-cursor="View">View more</a></div>
+    </section>
+
+    <!-- 04 WORK -->
+    <section class="scene" data-name="Work" aria-label="Work">
+      <div class="row edge" style="--top:44%;--gap:27vw">
+        <h2 class="h2 col-l split" data-x="-1">A collection of brands, campaigns and</h2>
+        <h2 class="h2 col-r split" data-x="1"><em>creative work shaped by strategy and aesthetics</em></h2>
+      </div>
+      <div class="foot-center"><div class="btn-row"><button type="button" class="btn" data-open-work data-fade data-cursor="View">See our work</button><a class="btn" href="#" data-open-contact data-fade data-cursor="Talk">Start a project</a></div></div>
+    </section>
+
+    <!-- 05 PHILOSOPHY -->
+    <section class="scene" data-name="Philosophy" aria-label="Philosophy">
+      <div class="row edge" style="--top:38%;--gap:14vw">
+        <h2 class="h2 col-l split" data-x="-1">Good brands get noticed. <em>Great brands get remembered.</em></h2>
+        <div class="col-r" data-depth="0.8"><p class="body" data-fade>We build brands people connect with and remember.</p></div>
+      </div>
+    </section>
+
+    <!-- 06 PROCESS -->
+    <section class="scene" data-name="Process" aria-label="Process">
+      <h2 class="h2 corner-title split" data-x="-1">How we <em>work</em></h2>
+      <svg class="path" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path id="proc-path" pathLength="1" d="M12 64 Q 50 112 88 64" />
+        <path id="proc-glow" pathLength="1" d="M12 64 Q 50 112 88 64" />
+      </svg>
+      <div class="orb" aria-hidden="true"><i class="o-glow"></i><i class="o-core"></i></div>
+      <div class="step st1" data-depth="0.3"><span data-fade>01</span><h3 data-fade>Strategy</h3></div>
+      <div class="step st2" data-depth="0.6"><span data-fade>02</span><h3 data-fade>Create</h3></div>
+      <div class="step st3" data-depth="0.6"><span data-fade>03</span><h3 data-fade>Launch</h3></div>
+      <div class="step st4" data-depth="0.3"><span data-fade>04</span><h3 data-fade>Scale</h3></div>
+      <div class="foot-center"><a class="btn" href="#" data-goto="6" data-fade data-cursor="View">Explore more</a></div>
+    </section>
+
+    <!-- 07 CLIENTS -->
+    <section class="scene" data-name="Clients" aria-label="Clients">
+      <div class="row" style="--top:34%;--gap:20vw">
+        <h2 class="h2 col-l split" data-x="-1">Brands we’ve</h2>
+        <h2 class="h2 col-r split" data-x="1"><em>worked with</em></h2>
+      </div>
+      <div class="quote-wrap" data-depth="0.6">
+        <figure class="quote" data-fade>
+          <p class="qt">Branding, production, marketing, photography, video and web &mdash; all under one roof.</p>
+          <figcaption>@the_merki · Instagram</figcaption>
+        </figure>
+        <button type="button" class="btn" data-open-work data-fade data-cursor="View">See our work</button>
+      </div>
+      <div class="marquee" data-fade aria-label="What we do">
+        <div class="track">
+          <span>Branding</span><span>Production House</span><span>Digital Marketing</span><span>Photography</span><span>Video Production</span><span>Web Design</span>
+          <span>Branding</span><span>Production House</span><span>Digital Marketing</span><span>Photography</span><span>Video Production</span><span>Web Design</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 CONTACT -->
+    <section class="scene" data-name="Contact" aria-label="Contact">
+      <div class="row" style="--top:62%;--gap:24vw">
+        <h2 class="h1 col-l split" data-x="-1">Let’s build something</h2>
+        <h2 class="h1 col-r split" data-x="1"><em>people remember</em></h2>
+      </div>
+      <div class="foot-center" data-depth="0.4">
+        <p class="lead" data-fade>Creative thinking, strong visuals and strategy <br />driven execution built for modern brands.</p>
+        <button type="button" class="btn" data-open-contact data-fade data-cursor="Talk">Start a project</button>
+      </div>
+      <footer class="legal" data-fade>© <span id="yr"></span> The Merki</footer>
+    </section>
+  </main>
+
+  <div id="spacer"></div>
+
+  <!-- Contact overlay -->
+  <div id="contact" role="dialog" aria-modal="true" aria-label="Start a project" aria-hidden="true">
+    <button class="close" type="button" data-close-contact data-cursor="Close" aria-label="Close">Close ✕</button>
+    <form id="contact-form" novalidate>
+      <p class="eyebrow">Start a project</p>
+      <h2 class="h1">Let’s make something<br /><em>they can’t scroll past.</em></h2>
+      <div class="fields">
+        <label><span>Name</span><input name="name" required autocomplete="name" /></label>
+        <label><span>Email</span><input name="email" type="email" required autocomplete="email" /></label>
+        <label class="wide"><span>Tell us about the project</span><textarea name="message" rows="3" required></textarea></label>
+      </div>
+      <button class="btn solid" type="submit" data-cursor="Send">Send it</button>
+    </form>
+  </div>
+
+  <a id="enquiry" class="enq" href="https://wa.me/918122512223" target="_blank" rel="noopener noreferrer" data-cursor="Chat" aria-label="Enquire on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span>Enquiry</span>
+  </a>
+
+  <!-- Work / proof panel -->
+  <div id="work" role="dialog" aria-modal="true" aria-label="Our work" aria-hidden="true" data-lenis-prevent>
+    <button class="close" type="button" data-close-work data-cursor="Close" aria-label="Close">Close ✕</button>
+    <div class="work-inner">
+      <p class="eyebrow">Proof of work</p>
+      <h2 class="h1">Work we’re <em>proud of.</em></h2>
+      <p class="work-lead">The Merki is a creative marketing agency &mdash; branding, production house, digital marketing, photography, video production and web design. A look at what we make, and what we stand behind.</p>
+
+      <div class="vouch">
+        <article><h3>Branding</h3><p>Brand strategy, visual identity and positioning built to be recognised.</p></article>
+        <article><h3>Production House</h3><p>Concept to final cut: shoots, edits and finished content for campaigns.</p></article>
+        <article><h3>Digital Marketing</h3><p>Platform strategy focused on consistency, engagement and brand growth.</p></article>
+        <article><h3>Photography</h3><p>Brand, product and campaign photography with a clear point of view.</p></article>
+        <article><h3>Video Production</h3><p>Short-form and campaign video made for modern attention spans.</p></article>
+        <article><h3>Web Design</h3><p>Premium, interactive websites designed to convert.</p></article>
+      </div>
+
+      <div id="work-gallery" class="gallery"></div>
+
+      <div class="ig-card">
+        <div>
+          <p class="eyebrow">Follow the work</p>
+          <p class="ig-handle">@the_merki</p>
+          <p class="chips"><span>#work</span><span>#team</span><span>#events</span><span>#insights</span></p>
+        </div>
+        <div class="ig-actions">
+          <a class="btn solid" href="https://www.instagram.com/the_merki?stkn=MXA1aXlpZXptdmpyZw%3D%3D" target="_blank" rel="noopener noreferrer" data-cursor="Follow">See more on Instagram</a>
+          <a class="btn" id="work-wa" href="https://wa.me/918122512223" target="_blank" rel="noopener noreferrer" data-cursor="Chat">Enquire on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cursor" aria-hidden="true"><span></span></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
